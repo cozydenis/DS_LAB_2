@@ -3,7 +3,7 @@ package net;
 import java.io.*;
 import java.net.ConnectException;
 import java.net.ServerSocket;
-import java.net.Socket;^
+import java.net.Socket;
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -20,7 +20,6 @@ public class Linker {
     private final CountDownLatch connected;              // initialised with peers.size()
 
     public Linker(String myName, int myPort, Map<String, Integer> peers, MessageListener listener){
-        //TODO
         this.myName = myName;
         this.myPort = myPort;
         this.peers = peers;
